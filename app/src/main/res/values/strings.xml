@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Button-counter-&lt;Mansell></string>
+    <string name="tx">0</string>
+    <string name="bt">+1</string>
+    <string name="bt2">-1</string>
+    <string name="bt3">Reset Score</string>
 </resources>
