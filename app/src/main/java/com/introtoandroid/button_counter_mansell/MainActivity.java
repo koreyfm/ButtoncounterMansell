@@ -49,4 +49,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putBoolean("MyBoolean", true);
+
+
+        savedInstanceState.putInt("mCounter", mCounter);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        boolean myBoolean = savedInstanceState.getBoolean("MyBoolean");
+
+        //int mCounter = savedInstanceState.getInt("mCounter");
+
+        //txv.setText(savedInstanceState.getInt("mCounter"));
+        mCounter = savedInstanceState.getInt("mCounter");
+        txv.setText(Integer.toString(savedInstanceState.getInt("mCounter")));
+
+
+    }
 }
