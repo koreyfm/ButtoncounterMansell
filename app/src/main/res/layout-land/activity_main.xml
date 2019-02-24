@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/tx"
+        android:textColor="@android:color/white"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt2"
+        app:layout_constraintStart_toStartOf="@+id/bt2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginRight="242dp"
+        android:text="@string/bt"
+        app:layout_constraintBottom_toBottomOf="@+id/bt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt2"
+        app:layout_constraintTop_toTopOf="@+id/bt2" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="234dp"
+        android:layout_marginLeft="234dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/bt2"
+        app:layout_constraintBottom_toTopOf="@+id/bt3"
+        app:layout_constraintEnd_toStartOf="@+id/bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/bt3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
+</android.support.constraint.ConstraintLayout>
